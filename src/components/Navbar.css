@@ -1,0 +1,20 @@
+@font-face {
+  src: url('../assets/STEPS\ Light.otf');
+  font-family: 'steps';
+}
+
+.navbar-brand {
+  font-family: steps;
+  font-size: 40px;
+  color: #4668d9;
+  line-height: 1;
+}
+
+.nav-link {
+  color: grey;
+  transition: opacity 0.5s linear;
+}
+
+.nav-link:hover, .nav-link:active {
+  opacity: 0.45;
+}

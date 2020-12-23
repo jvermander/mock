@@ -1,0 +1,64 @@
+@font-face {
+  src: url('../assets/Larke\ Neue\ Regular.ttf');
+  font-family: 'larker';
+}
+
+@font-face {
+  src: url('../assets/Larke\ Neue\ Thin.ttf');
+  font-family: 'larke';
+}
+
+#modal {
+  font-family: larker;
+  color: navy;
+}
+
+#learnmore {
+  background-image: linear-gradient(
+    to right, transparent, transparent,
+  #98b3f1e5, #98b3f1f3
+  ), url("../assets/skyline.jpg");
+}
+
+#placeholder1 {
+  background-image: linear-gradient(
+    to right,#af846c, #e5b195c7, transparent, transparent
+  ), url("../assets/exterior.jpg");
+}
+
+#placeholder2 {
+  background-image: linear-gradient(
+    to right, transparent, transparent,
+    #98b3f1e5, #98b3f1f3
+  ), url("../assets/apartment.jpg");
+}
+
+.ad {
+  font-family: larker;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  transition: height 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  line-height: 1.4;
+  
+} 
+
+.adtext {
+  font-size: 1.75em;
+}
+
+.carousel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#signup {
+  font-family: larke;
+  background-image: linear-gradient(
+    to right, #e5b195, transparent, transparent, transparent
+  ), url("../assets/working.jpg");
+  background-size: cover;
+  background-position: 25% 62%;
+  height: auto;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}

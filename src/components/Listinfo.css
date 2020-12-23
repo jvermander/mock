@@ -1,0 +1,118 @@
+#simplelist strong {
+  font-family: larkeb;
+}
+
+#simplelist .simplelistitem {
+  transition: color 0.5s;
+  transition: filter 0.5s;
+}
+
+#simplelist .simplelistitem:hover {
+  color:  #4b4b4b;
+  cursor: pointer;
+  filter: brightness(25%);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  font-size: 16px;
+  display: inline;
+}
+
+.listitem {
+  border-top-right-radius: 7em;
+  border-bottom-right-radius: 7em;
+  font-size: 16px;
+  color: white;
+  background-color: #be8b8b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 1s;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.listitem:nth-child(odd), .btn {
+  background-color: #697dbb;
+}
+
+.listitem:nth-child(odd) {
+  width: 85%;
+}
+
+.listitem:nth-child(odd):hover, .btn:hover, .btn:active, .btn:visited {
+  background-color: #374a76 !important;
+}
+
+.listitem:nth-child(even):hover {
+  background-color: #875d5d;
+}
+
+.listitem:hover .twitch {
+  animation: twitch 0.5s ease-out;
+}
+
+.listitem:hover .bounce {
+  animation: bounce 0.5s ease-out;
+}
+
+.listitem:hover .distort {
+  animation: distort 0.5s ease-out;
+}
+
+.listitem:hover .jumble {
+  animation: jumble 0.5s ease-out;
+}
+
+.btn {
+  border-radius: 7em;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 12.5em;
+}
+
+@keyframes bounce {
+  0% {transform: scale(1)}
+  25% {transform: scale(1.25)}
+  50% {transform: scale(1.35)}
+  75% {transform: scale(0.75)}
+  100% {transform: scale(1)}
+}
+
+@keyframes twitch {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(25deg)}
+  50% {transform: rotate(-25deg)}
+  75% {transform: rotate(12.5deg)}
+  100% {transform: rotate(0deg)}
+}
+
+@keyframes distort {
+  0% {transform: skewY(0deg)}
+  25% {transform: skewY(35deg)}
+  50% {transform: skewY(-25deg)}
+  75% {transform: skewY(12.5deg)}
+  100% {transform: skewY(0deg)}
+}
+
+@keyframes jumble {
+  0% {transform: translateX(-5%) }
+  20% {transform: translateX(20%)}
+  40% {transform: translateX(-15%)}
+  60% {transform: translateX(10%)}
+  80% {transform: translateX(-5%)}
+  80% {transform: translateX(0%)}
+}
+
+@font-face {
+  src: url('../assets/Larke\ Neue\ Regular.ttf');
+  font-family: 'larker';
+}
+
+@font-face {
+  src: url('../assets/Larke\ Neue\ Bold.ttf');
+  font-family: 'larkeb';
+}
